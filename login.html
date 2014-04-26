@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Apps</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-responsive.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('[rel="tooltip"]').tooltip();
+			$('[rel="popover"]').popover();
+		});
+		</script>
+	</head>
+	<body class="login">
+		<div class="container login">
+			<div class="row-fluid">
+				<div class="span7">
+					<div class="logo">
+						<img src="./img/asset/logo-small.png" alt="">
+					</div>
+					<div class="slogan" style="margin-top: 15px;">
+						<div class="left">
+							Self
+						</div>
+						<div class="right">
+							<span>Managed Emergency</span>
+							<span>Preparedness</span>
+						</div>
+					</div>
+				</div>
+				<div class="span5">
+					<div class="sectionTitle">
+						<h1>Account Login</h1>
+						<p>Please enter your username and password.</p>
+					</div>
+					<form>
+						<div class="control-group">
+							<label class="control-label" for="inputEmail">Username</label>
+							<div class="controls">
+								<input type="text" id="inputEmail" placeholder="Username" class="span12">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputPassword">Password</label>
+							<div class="controls">
+								<input type="password" id="inputPassword" placeholder="Password" class="span12">
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<button type="submit" class="btn btn-success">Login</button>
+							</div>
+						</div>
+					</form>
+					<span style="font-size: 12px;">Forget your account password? <a href="forget.html" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Click here to reset your password">Click Here</a> to reset.</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

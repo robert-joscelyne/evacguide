@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Apps</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style-responsive.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('[rel="tooltip"]').tooltip();
+			$('[rel="popover"]').popover();
+
+			$('.sidebar .sideAction > a.barHide').click(function(e){
+				$('.sidebar').hide();
+				$('.content').removeClass('span9').addClass('span12');
+				$('.sideAction > a.barShow').removeClass('hide');
+				e.preventDefault();
+			});
+			$('.content .sideAction > a.barShow').click(function(e){
+				$('.sidebar').show();
+				$('.content').removeClass('span12').addClass('span9');
+				$('.sideAction > a.barShow').addClass('hide');
+				e.preventDefault();
+			});
+		});
+		</script>
+	</head>
+	<body class="inside">
+		<div class="watermark"></div>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="#"><img src="./img/asset/evac-icon.png" alt=""></a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#"><i class="icon-home icon-white"></i> Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-th-large icon-white"></i> Module <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Facility Details</a></li>
+								<li><a href="#">Emergency Contacts</a></li>
+								<li><a href="#">EPC/ECO</a></li>
+								<li><a href="#">Emergency Procedures</a></li>
+								<li><a href="#">Evacuation Diagrams</a></li>
+								<li><a href="#">PEEP’s</a></li>
+								<li><a href="#">Incident Register</a></li>
+								<li><a href="#">First Aid</a></li>
+								<li><a href="#">Checklists</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-open icon-white"></i> Manage <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Training</a></li>
+								<li><a href="#">Meetings</a></li>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">Resources</a></li>
+								<li><a href="#">Settings</a></li>
+							</ul>
+						</li>
+						<li class="divider-vertical"></li>
+						<li><a href="#"><i class="icon-flag icon-white"></i> Help</a></li>
+						<li class="divider-vertical"></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li class="divider-vertical"></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> User Name: <strong>Phil Lascala</strong> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Change Password</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Sign Out</a></li>
+	                        </ul>
+                        </li>
+					</ul>
+                  </div><!-- /.nav-collapse -->
+                </div>
+			</div><!-- /navbar-inner -->
+		</div>
+		<div class="wrapper container-fluid">
+			<div class="row-fluid header">
+				<div class="span6 logo">
+					<a href="#"><img src="./img/asset/logo-mini.png" alt=""></a>
+				</div>
+				<div class="span6 section">
+					<div class="sectionTitle pull-right">
+						<h1>Welcome <span>Phil Lascala</span></h1>
+						<h6>You have been successfully logged in</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span9 content">
+					<div class="sideAction">
+						<a href="#" class="barShow hide"><i class="icon-chevron-left"></i></a>
+					</div>
+					<div class="slogan" style="margin: 0 auto;">
+						<div class="left">
+							Self
+						</div>
+						<div class="right">
+							<span>Managed Emergency</span>
+							<span>Preparedness</span>
+						</div>
+						<div class="logo">
+							<img src="./img/asset/sample-logo.png" alt="">
+						</div>
+					</div>
+					<div class="dashMenu">
+						<div class="building">
+							<img src="./img/asset/building.jpg" alt="">
+						</div>
+						<div class="border"></div>
+						<ul>
+							<li><a href="#"><i class="icon-home icon-white"></i><span>Home</span></a></li>
+							<li><a href="#"><i class="icon-th-large icon-white"></i><span>Module</span></a></li>
+							<li><a href="#"><i class="icon-folder-open icon-white"></i><span>Manage</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span3 sidebar">
+					<div class="sideAction">
+						<a href="#" class="barHide"><i class="icon-chevron-right"></i></a>
+					</div>
+					<div class="widget well">
+						<h4 class="title"><i class="icon-user"></i> User Info</h4>
+						<div class="body">
+							<img src="./img/asset/facility.png" alt="">
+							<ul class="userInfo">
+								<li><span class="sec">Name</span><span class="val">: Phil Lascala</span></li>
+								<li><span class="sec">Job Title</span><span class="val">: Owner</span></li>
+								<li><span class="sec">Email</span><span class="val">: example@domani.com</span></li>
+							</ul>
+							<a href="#" class="btn btn-mini"><i class="icon-edit"></i> Edit Info</a><br><br>
+							<table class="table table-bordered" style="margin-bottom: 0;">
+								<tbody>
+									<tr>
+										<td>Member Since</td>
+										<td>1/4/2012 16:84</td>
+									</tr>
+									<tr>
+										<td>Last Login</td>
+										<td>26/4/2013 1:50</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="widget well">
+						<h4 class="title"><i class="icon-user"></i> Facility Info</h4>
+						<div class="body">
+							<img src="./img/asset/user.jpg" alt="">
+							<ul class="userInfo">
+								<li><span class="sec">Name</span><span class="val">: Geoff Allam</span></li>
+								<li><span class="sec">Address</span><span class="val">: 33 Hacking Drive<br>&nbsp; Narellan vale<br>&nbsp; New South Wales-2567</span></li>
+								<li><span class="sec">Website</span><span class="val">: http://google.com</span></li>
+							</ul>
+							<a href="#" class="btn btn-mini"><i class="icon-edit"></i> Edit Info</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer navbar navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="copyright pull-left">
+					© 2013. All Rights Reserved. <strong>Evac Guide</strong>.
+				</div>
+				<div class="powered pull-right">
+					Powered By: <a href="http://www.vaaren.com/" target="_blank"><strong>VAAREN</strong></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

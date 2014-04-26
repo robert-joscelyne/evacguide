@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Apps</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<style>
+		body {
+			background-color: #444;
+			color: #FFF;
+			padding: 10px;
+		}
+
+		ul {
+			font-size: 12px;
+			font-weight: bold;
+		}
+		a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #FF6600;
+		}
+		</style>
+
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('[rel="tooltip"]').tooltip();
+			$('[rel="popover"]').popover();
+		});
+		</script>
+	</head>
+	<body>
+		<h5>Menu</h5>
+		<hr>
+		<ul>
+			<li><a href="../login.html" target="main">Login</a></li>
+			<li><a href="../forget.html" target="main">Forget Password</a></li>
+			<li><a href="../home.html" target="main">Home</a></li>
+			<li><a href="../facility.html" target="main">Facility</a></li>
+		</ul>
+	</body>
+</html>
